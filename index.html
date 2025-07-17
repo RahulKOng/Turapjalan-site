@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Roadworks | Tar Jalan Services in Malaysia | MOF Certified Contractor</title>
+    <meta name="description" content="Leading tar jalan, premix road construction & asphalt resurfacing services in Malaysia. 15+ years experience, MOF certified. Call +60-163262307 for free quotation.">
+    <meta name="keywords" content="tar jalan Malaysia, premix road construction, asphalt resurfacing, roadworks contractor, Klang Valley, Johor Bahru, Penang">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: transparent !important;
+            box-shadow: none;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: transparent !important;
+            box-shadow: none;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+        
+        .logo span {
+            color: #1e3a8a;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #4f46e5;
+        }
+        
+        .phone-header {
+            background: linear-gradient(135deg, #4f46e5, #60a5fa);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .phone-header:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #1e3a8a;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('images/hero-bg.jpg') center center/cover no-repeat;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #1e293b; /* Changed from #fff to a dark blue-gray for better readability */
+            padding: 120px 20px 60px;
+            text-shadow: 0 2px 8px rgba(255,255,255,0.7); /* Optional: subtle white shadow for contrast */
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(255,255,255,0.55);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero-subheading {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #60a5fa, #4f46e5);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
+            color: white;
+        }
+        
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s;
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 3rem 5%;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .section-title .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #475569;
+        }
+        
+        .about-image {
+            position: relative;
+            height: 400px;
+            background: #f8fafc;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 3rem 5%;
+            background: #fff;
+        }
+        
+        .services-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #4f46e5, #60a5fa);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .service-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+        
+        .services-cta {
+            text-align: center;
+            padding: 3rem;
+            background: #f8fafc;
+            border-radius: 20px;
+            color: #111 !important; /* Changed from white to black */
+        }
+        .services-cta h3,
+        .services-cta p,
+        .services-cta a {
+            color: #111 !important; /* Ensure all text and links are black */
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 3rem 5%;
+            background: #f8fafc;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: 3rem 5%;
+            background: #ffffff;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .feature-check {
+            color: #10b981;
+            font-size: 1.5rem;
+            font-weight: bold;
+            min-width: 30px;
+        }
+        
+        .feature-text {
+            color: #374151;
+            font-weight: 500;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 3rem 5%;
+            background: #1e3a8a;
+            color: white;
+        }
+        
+        .contact .section-title h2 {
+            color: white;
+        }
+        
+        .contact .section-title .subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            min-width: 40px;
+        }
+        
+        .contact-info h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info p {
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 3rem 5% 2rem;
+            text-align: center;
+        }
+        
+        .footer-cta {
+            background: linear-gradient(135deg, #4f46e5, #60a5fa);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-cta h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-cta p {
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+        
+        .footer-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-btn {
+            padding: 0.8rem 2rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .footer-btn:hover {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+        
+        .copyright {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subheading {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-image {
+                height: 250px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 15px 40px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .cta-primary,
+            .cta-secondary {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* Additional Styles */
+.services-grid img {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    border-radius: 18px;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whatsapp-cta {
+    background: #25D366 !important; /* WhatsApp green */
+    color: #fff !important;
+    border: none !important;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.15);
+    transition: background 0.3s, color 0.3s;
+}
+.whatsapp-cta:hover {
+    background: #128C7E !important;
+    color: #fff !important;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="MR Roadworks Logo" style="height:100px; vertical-align:middle; margin-right:10px;">
+                MR ROADWORKS
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose">Why Choose Us</a></li>
+                <li><a href="tel:+60163262307" class="phone-header">📞 +60-163262307</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Roadworks & Tar Jalan Services in Malaysia</h1>
+            <p class="hero-subheading">We specialize in asphalt paving, premix roads, road resurfacing, and tar application across Peninsular Malaysia.</p>
+            <div class="cta-buttons">
+                <a href="tel:+60163262307" class="cta-primary">
+                    📞 Call Now for Free Site Visit & Quotation
+                </a>
+                <a href="https://wa.me/60163262307" class="cta-secondary whatsapp-cta" target="_blank">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp" style="width: 22px; height: 22px; vertical-align: middle; margin-right: 8px;">
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experienced Roadworks Contractor You Can Trust</h2>
+            </div>
+            <div class="about-content">
+    <div class="about-text">
+        <p>With over <strong>15+ years of experience</strong>, our company has become a leading provider of tar jalan, premix road construction, and asphalt resurfacing in Malaysia. We deliver high-quality, cost-effective solutions using certified materials and state-of-the-art machinery to ensure durability and satisfaction.</p>
+        <br>
+        <p>Whether it's a residential driveway or a large-scale highway, we approach every project with professionalism and care. Our MOF-certified and CIDB-registered status ensures you're working with qualified professionals who meet industry standards.</p>
+    </div>
+    <div class="about-image">
+        <img src="images/about-us.jpg" alt="A team of experienced roadwork professionals in safety vests and helmets working together on a road construction project with heavy machinery in the background under a bright sky. The environment appears industrious and collaborative, conveying a sense of professionalism and dedication. If present, visible text on machinery or uniforms includes company branding or certification badges." style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Roadworks Services</h2>
+                <p class="services-intro">View our recent work across Klang Valley, Johor Bahru, Penang, and other regions in Malaysia. We handle projects of all sizes – from private driveways to municipal resurfacing jobs.</p>
+            </div>
+            
+            
+<div class="services-grid">
+    <div class="service-card">
+        <img src="images/service-tar-jalan.jpeg" alt="Tar Jalan Service">
+        <h3>Tar Jalan & Road Resurfacing</h3>
+        <p>Professional tar application and road resurfacing services for durable, weather-resistant surfaces that stand the test of time.</p>
+    </div>
+    <div class="service-card">
+        <img src="images/service-premix.jpeg" alt="Premix Road Construction">
+        <h3>Premix Road Construction</h3>
+        <p>Complete premix road construction including base and wearing course installation using high-quality materials and modern techniques.</p>
+    </div>
+    <div class="service-card">
+        <img src="images/service-asphalt.png" alt="Asphalt and Bitumen Paving">
+        <h3>Asphalt and Bitumen Paving</h3>
+        <p>Expert asphalt and bitumen paving services for highways, residential areas, and commercial properties with guaranteed quality.</p>
+    </div>
+    <div class="service-card">
+        <img src="images/service-driveway.jpeg" alt="Driveway and Car Park Surfacing">
+        <h3>Driveway and Car Park Surfacing</h3>
+        <p>Specialized driveway and car park surfacing solutions that enhance property value and provide smooth, durable surfaces.</p>
+    </div>
+    <div class="service-card">
+        <img src="images/service-repair.png" alt="Road Patching & Crack Repair">
+        <h3>Road Patching & Crack Repair</h3>
+        <p>Quick and effective road patching and crack repair services to restore road integrity and prevent further damage.</p>
+    </div>
+    <div class="service-card">
+        <img src="images/service-milling.jpeg" alt="Milling and Site Preparation">
+        <h3>Milling and Site Preparation</h3>
+        <p>Professional milling services and comprehensive site preparation including drainage works and road bump installation.</p>
+    </div>
+</div>
+
+<div class="services-cta">
+                <h3>Looking for long-lasting, weather-resistant road solutions?</h3>
+                <p>Our experts are ready to help you with professional consultation and competitive pricing.</p>
+                <a href="tel:+60163262307" class="cta-primary">Contact Our Experts Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section" style="padding: 6rem 5%; background: #f8fafc;">
+    <div class="container">
+        <div class="section-title">
+            <h2>Project Gallery</h2>
+            <p class="subtitle">Browse some of our recent roadworks and resurfacing projects across Malaysia.</p>
+        </div>
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <img src="images/gallery1.jpeg" alt="Roadwork Project 1" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery2.jpeg" alt="Roadwork Project 2" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery3.jpeg" alt="Roadwork Project 3" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery4.jpeg" alt="Roadwork Project 4" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery5.jpeg" alt="Roadwork Project 5" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery6.jpeg" alt="Roadwork Project 6" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery7.jpeg" alt="Roadwork Project 7" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery8.jpeg" alt="Roadwork Project 8" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery9.jpeg" alt="Roadwork Project 9" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery10.jpeg" alt="Roadwork Project 10" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery11.jpeg" alt="Roadwork Project 11" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+            <img src="images/gallery12.jpg" alt="Roadwork Project 12" style="width:100%; border-radius: 15px; object-fit: cover; height: 200px;">
+        </div>
+    </div>
+</section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Malaysians Trust Our Roadwork Solutions</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-check">✅</div>
+                    <div class="feature-text">Over 15+ Years of Industry Experience</div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-check">✅</div>
+                    <div class="feature-text">MOF-Certified & CIDB-Registered Contractor</div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-check">✅</div>
+                    <div class="feature-text">Modern Machinery and Quality-Controlled Materials</div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-check">✅</div>
+                    <div class="feature-text">Fast Turnaround with Affordable Pricing</div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-check">✅</div>
+                    <div class="feature-text">Proven Track Record with Industrial, Commercial & Residential Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Let's Build Roads That Last – Get in Touch</h2>
+                <p class="subtitle">Reach out for a free consultation and site inspection. We respond within 24 hours.</p>
+            </div>
+
+            <!-- Move the "Need immediate assistance?" section here -->
+            <div class="footer-cta" style="margin-bottom:2.5rem;">
+                <h3>Need immediate assistance?</h3>
+                <p>We're available 24/7 in Klang Valley, Selangor, Johor Bahru, and more. Call now for fast service and competitive pricing.</p>
+                <div class="footer-buttons">
+                    <a href="tel:+60163262307" class="footer-btn">📞Call</a>
+                    <a href="https://wa.me/60163262307" class="footer-btn whatsapp-cta" target="_blank">
+                        <img src="images/whatsapp-icon.png" alt="WhatsApp" style="width: 22px; height: 22px; vertical-align: middle; margin-right: 8px;">
+                        24/7 WhatsApp
+                    </a>
+                </div>
+            </div>
+            <!-- End moved section -->
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+60163262307" style="color: inherit; text-decoration: none;">+60-163262307</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/whatsapp-icon.png" alt="WhatsApp" style="width: 22px; height: 22px; vertical-align: middle; margin-right: 4px;">
+                    </div>
+                    <div class="contact-info">
+                        <h4>WhatsApp</h4>
+                        <p>
+                            <a href="https://wa.me/60163262307" class="footer-btn whatsapp-cta" target="_blank" style="display:inline-flex;align-items:center;padding:0.8rem 2rem;font-size:1rem;">
+                                Chat with us now
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p><a href="mailto:contact@yourcompany.com" style="color: inherit; text-decoration: none;">contact@mrroadworks.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📌</div>
+                    <div class="contact-info">
+                        <h4>Location</h4>
+                        <p><a href="https://maps.app.goo.gl/tyjfxW5c4yMr2LXn6?g_st=aw" target="_blank" style="color: inherit; text-decoration: none;">View on Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 MR Roadworks Malaysia. All Rights Reserved. | MOF Certified • CIDB Registered</p>
+                <p>Serving Klang Valley, Selangor, Johor Bahru, Penang & Peninsular Malaysia</p>
+                <p style="margin-top:1rem; font-size:1rem; color:#94a3b8;">
+                Website designed & developed by <strong>Infinitiq</strong>
+            </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'transparent';
+                header.style.boxShadow = 'none';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards and feature items
+        document.querySelectorAll('.service-card, .feature-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

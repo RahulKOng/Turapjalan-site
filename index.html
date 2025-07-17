@@ -96,14 +96,15 @@
         
         /* Hero Section */
         .hero {
+            position: relative; /* Add this */
             background: url('images/hero-bg.jpg') center center/cover no-repeat;
             min-height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #1e293b; /* Changed from #fff to a dark blue-gray for better readability */
-            padding: 120px 20px 60px;
+            color: #1e293b;
+            padding: 120px 20px 80px; /* Increase bottom padding */
             text-shadow: 0 2px 8px rgba(255,255,255,0.7); /* Optional: subtle white shadow for contrast */
         }
         
@@ -189,6 +190,18 @@
         .about {
             padding: 3rem 5%;
             background: #f8fafc;
+            margin-top: 0; /* Reset if set elsewhere */
+        }
+        
+        @media (min-width: 769px) {
+            .about {
+                margin-top: 40px; /* Space between hero and about on desktop */
+            }
+        }
+        @media (max-width: 768px) {
+            .about {
+                margin-top: 20px; /* Less space on mobile */
+            }
         }
         
         .container {
